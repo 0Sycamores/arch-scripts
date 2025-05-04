@@ -194,8 +194,6 @@ cat <<EOF >>/etc/pacman.conf
 [archlinuxcn]
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/\$arch
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/\$arch
-Server = https://mirrors.hit.edu.cn/archlinuxcn/\$arch
-
 EOF
 pacman -Syyu
 color_echo $GREEN $COK "Arch Linux CN 源已添加完成"
