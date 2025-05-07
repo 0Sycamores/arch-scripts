@@ -70,9 +70,13 @@ echo
 # 配置镜像源
 color_echo $CYAN $CNT "正在配置镜像源..."
 cat >/etc/pacman.d/mirrorlist <<EOF
+##
+## Arch Linux repository mirrorlist
+## Generated on 2025-03-11
+##
 Server = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch
-Server = http://mirror.lzu.edu.cn/archlinux/\$repo/os/\$arch
+
 EOF
 color_echo $GREEN $COK "镜像源配置完成"
 echo
